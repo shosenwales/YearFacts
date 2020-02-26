@@ -7,7 +7,7 @@ yearInput.addEventListener('input', getFactFetch);
 function getFactFetch(){
     let year = yearInput.value;
 
-    fetch('https://numbersapi.com/'+year+'/year')
+    fetch('http://numbersapi.com/'+year+'/year')
         .then(response => response.text())
         .then(data => {
            if(year != ''){
